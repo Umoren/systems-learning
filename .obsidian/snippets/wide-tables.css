@@ -1,0 +1,29 @@
+/* Allow wide tables to scroll horizontally when necessary */
+.markdown-rendered .el-table {
+  overflow-x: auto;
+}
+
+/* Give the table room, but don't let text stretch it forever */
+.markdown-rendered table {
+  min-width: 100%;
+  width: auto;
+  table-layout: auto;
+}
+
+/* Wrap text inside cells */
+.markdown-rendered th,
+.markdown-rendered td {
+  min-width: 120px;
+  max-width: 380px;
+  white-space: normal !important;
+  overflow-wrap: break-word;
+  word-break: normal;
+  vertical-align: top;
+}
+
+/* Keep small columns like Session reasonably narrow */
+.markdown-rendered th:first-child,
+.markdown-rendered td:first-child {
+  min-width: 80px;
+  max-width: 110px;
+}

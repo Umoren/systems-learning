@@ -1,0 +1,11 @@
+# Keep personal Obsidian state local
+.obsidian/*
+
+# Share our CSS snippets
+!.obsidian/snippets/
+!.obsidian/snippets/**
+
+# OS / Obsidian noise
+.trash/
+.DS_Store
+Thumbs.db
